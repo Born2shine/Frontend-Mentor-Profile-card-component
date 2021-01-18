@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: #19a1ae;
+}
+
+.main {
+  position: relative;
+}
+
+.card {
+  background: #fff;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  border-radius: 0.8rem;
+}
+
+.card .bg-image {
+  position: relative;
+  min-height: 10rem;
+  background: url("../images/bg-pattern-card.svg") center/cover;
+  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+}
+
+.card .bg-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .bg-image .img-container {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.card .bg-image .img-container img {
+  border-radius: 50%;
+  border: 6px solid #fff;
+  width: 130px;
+}
+
+.card .card-body .details {
+  padding-top: 4rem;
+  text-align: center;
+  border-bottom: 0.1rem solid #e6e6e6;
+}
+
+.card .card-body .details span {
+  padding: 0.8rem 0;
+}
+
+.card .card-body .details .name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card .card-body .details .name .age {
+  display: inline-block;
+  color: #969696;
+}
+
+.card .card-body .details .country {
+  display: block;
+  color: #969696;
+}
+
+.card .card-body .followers-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card .card-body .followers-container .followers h2,
+.card .card-body .followers-container .likes h2,
+.card .card-body .followers-container .photos h2 {
+  font-size: 1.5rem;
+}
+
+.card .card-body .followers-container .followers span,
+.card .card-body .followers-container .likes span,
+.card .card-body .followers-container .photos span {
+  display: block;
+  padding: 0.3rem 0;
+  font-size: 0.7rem;
+  color: #969696;
+  letter-spacing: 0.1rem;
+}
+
+.attribution {
+  margin: 2rem 0;
+  color: #e2e9ff;
+}
+
+.attribution a {
+  color: aquamarine;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 30%;
+  }
+}

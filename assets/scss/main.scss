@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: #19a1ae;
+}
+.main {
+  position: relative;
+  // padding: 10rem;
+}
+.card {
+  background: #fff;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  border-radius: 0.8rem;
+  .bg-image {
+    position: relative;
+    min-height: 10rem;
+    background: url("../images/bg-pattern-card.svg") center/cover;
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+    img {
+      object-fit: cover;
+    }
+    .img-container {
+      position: absolute;
+      right: 50%;
+      bottom: 0;
+      transform: translate(50%, 50%);
+      img {
+        border-radius: 50%;
+        border: 6px solid #fff;
+        width: 130px;
+      }
+    }
+  }
+  .card-body {
+    .details {
+      padding-top: 4rem;
+      text-align: center;
+      border-bottom: 0.1rem solid #e6e6e6;
+      span {
+        padding: 0.8rem 0;
+      }
+      .name {
+        font-weight: bold;
+        font-size: 1.2rem;
+        .age {
+          display: inline-block;
+          color: $dark-grey;
+        }
+      }
+      .country {
+        display: block;
+        color: $dark-grey;
+      }
+    }
+    .followers-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 1rem;
+      text-align: center;
+      .followers,
+      .likes,
+      .photos {
+        h2 {
+          font-size: 1.5rem;
+        }
+        span {
+          display: block;
+          padding: 0.3rem 0;
+          font-size: 0.7rem;
+          color: $dark-grey;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  margin: 2rem 0;
+  color: #e2e9ff;
+  a {
+    color: aquamarine;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .card {
+    width: 30%;
+  }
+}
